@@ -1,30 +1,17 @@
 package myPackage;
 
-public class CompteEpargne {
+public class CompteEpargne extends Compte{
 	
 	private double solde_epargne;
 	private double taux_interet;
 	
-	public CompteEpargne(double solde)
+	public CompteEpargne()
 	{
-		solde_epargne = solde;
+		super();
 		taux_interet = 0.032;
-	}
-	
-	public void addSoldeEp(double montant, int indice)
-	{
-		if(indice == 0)
-		{
-			solde_epargne = solde_epargne + montant;
-		}
-		else { solde_epargne = solde_epargne + solde_epargne*taux_interet;}
-		
 		
 	}
 	
-	public double getSoldeEp()
-	{
-		return solde_epargne;
-	}
+	public double get_taux() {return taux_interet;}
 
 }
