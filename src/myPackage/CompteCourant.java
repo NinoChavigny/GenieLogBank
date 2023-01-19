@@ -1,23 +1,12 @@
 package myPackage;
 
-public class CompteCourant {
+public class CompteCourant extends Compte {
 	
-	private double solde_courant;
-	
-	public CompteCourant(double solde)
+	public CompteCourant()
 	{
-		solde_courant = solde;
+		super();
 	}
 	
-	public void addSoldeCourant(double montant)
-	{
-		solde_courant = solde_courant + montant;
-		
-	}
 	
-	public double getSoldeCourant()
-	{
-		return solde_courant;
-	}
 
 }
