@@ -1,10 +1,8 @@
 package myPackage;
 
 public class DossierBancaire {
-	
-	private CompteCourant comptecourant;
-	private CompteEpargne compteepargne;
-	private double m_solde;
+	private Compte compte;
+
 	
 	//Constructeur
     public DossierBancaire()
@@ -14,12 +12,10 @@ public class DossierBancaire {
 
     }
 
-    public void deposer(double value) {comptecourant.addSoldeCourant(value*0.4);
-    	compteepargne.addSoldeEp(value*0.6, 0);
-    	m_solde = comptecourant.getSoldeCourant() + compteepargne.getSoldeEp();
+    public void deposer(double value) {compte.deposer2(value);
     }
     
-    public double get_solde() {return m_solde;}
+    public double get_solde() {return compte.get_solde();}
     
     public double get_ep() {return compteepargne.getSoldeEp();} //POUR TESTS
     
