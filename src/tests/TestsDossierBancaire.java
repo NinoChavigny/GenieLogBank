@@ -41,4 +41,21 @@ public class TestsDossierBancaire {
 		
 		
 	}
+	
+	@Test
+	public void testretrait() throws Exception {
+		DossierBancaire dossier = new DossierBancaire();
+		
+		dossier.deposer(100);
+		
+		dossier.retirer(100);
+		
+		assertEquals(100,dossier.get_solde(),0);
+		
+		dossier.retirer(20);
+		
+		assertEquals(80,dossier.get_solde(),0);
+		
+		
+	}
 }

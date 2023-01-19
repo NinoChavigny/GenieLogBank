@@ -25,7 +25,10 @@ public class DossierBancaire {
     
     public void remunerer() {compteepargne.addSolde(compteepargne.get_taux()* compteepargne.getSolde());}
     
-
+    public void retirer(double montant) throws Exception
+    {
+    	comptecourant.retrait(montant);
+    }
 
     
   //Commentaire fusion
