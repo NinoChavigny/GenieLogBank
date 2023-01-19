@@ -16,6 +16,9 @@ public class DossierBancaire {
 
     public void deposer(double value) {comptecourant.addSoldeCourant(value*0.4);
     	compteepargne.addSoldeEp(value*0.6, 0);
+    	
+    	
+    	//Commentaire :)
     	m_solde = comptecourant.getSoldeCourant() + compteepargne.getSoldeEp();
     }
     
